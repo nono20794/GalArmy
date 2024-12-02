@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pillbox A</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outer-grid">
+      <header class="header">
+        <div class="left-header">
+          <i class="fa-solid fa-bars menu-btn" onclick="toggleNav()"></i>
+          <a href="./index.html">גדוד 412</a>
+        </div>
+        <div class="right-header">
+          <a class="header-hide" href="./a.html">סוללה א</a>
+        </div>
+      </header>
+      <nav class="navbar hide-nav">
+        <div class="upper-nav">
+          <div class="nav-item" onclick="navigateTo('a.html')">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#">סוללה א</a>
+          </div>
+          <div class="nav-item" onclick="navigateTo('b.html')">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#">סוללה ב</a>
+          </div>
+          <div class="nav-item" onclick="navigateTo('c.html')">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#">סוללה ג</a>
+          </div>
+        </div>
+
+        <div class="nav-item home-nav">
+          <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+      </nav>
+      <div class="main-container">
+        <div class="inner-a-pillbox">
+          <header class="pillbox-a-header">
+            <h3>חסם באקה 526</h3>
+            <p id="date"></p>
+            <div class="commander-name">
+              <input
+                type="text"
+                name="commander"
+                placeholder="הכנס שם"
+                class="input-commander"
+              />
+              <label for="commander">:שם מפקד</label>
+            </div>
+            <div class="open-gate">
+              <select name="open-gate" id="open-gate-pill">
+                <option value="8:00">8:00</option>
+                <option value="12:00">12:00</option>
+                <option value="16:00">16:00</option>
+              </select>
+              <label for="open-gate">:פתיחת שער</label>
+            </div>
+            <div class="close-gate">
+              <select name="close-gate" id="close-gate-pill">
+                <option value="8:30">8:30</option>
+                <option value="12:30">12:30</option>
+                <option value="16:30">16:30</option>
+              </select>
+              <label for="close-gate">:סגירת שער</label>
+            </div>
+          </header>
+          <main class="pillbox-a-main">
+            <div class="box1">
+              <p>מספר נכנסים</p>
+              <input id="number-enter" type="number" value="0" min="0" />
+              <div class="box-buttons">
+                <button
+                  type="button"
+                  class="add-button"
+                  data-input="number-enter"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+                <button
+                  type="button"
+                  class="minus-button"
+                  data-input="number-enter"
+                >
+                  <i class="bi bi-dash-lg"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box2">
+              <p>מספר יוצאים</p>
+              <input id="number-exit" type="number" value="0" min="0" />
+              <div class="box-buttons">
+                <button
+                  type="button"
+                  class="add-button"
+                  data-input="number-exit"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+                <button
+                  type="button"
+                  class="minus-button"
+                  data-input="number-exit"
+                >
+                  <i class="bi bi-dash-lg"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box3">
+              <p>מספר נכנסים</p>
+              <input id="number-reject" type="number" value="0" min="0" />
+              <div class="box-buttons">
+                <button
+                  type="button"
+                  class="add-button"
+                  data-input="number-reject"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+                <button
+                  type="button"
+                  class="minus-button"
+                  data-input="number-reject"
+                >
+                  <i class="bi bi-dash-lg"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box4">
+              <p>רכבים נכנסים</p>
+              <input id="vehicle-enter" type="number" value="0" min="0" />
+              <div class="box-buttons">
+                <button
+                  type="button"
+                  class="add-button"
+                  data-input="vehicle-enter"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+                <button
+                  type="button"
+                  class="minus-button"
+                  data-input="vehicle-enter"
+                >
+                  <i class="bi bi-dash-lg"></i>
+                </button>
+              </div>
+            </div>
+            <div class="box5">
+              <p>רכבים יוצאים</p>
+              <input id="vehicle-exit" type="number" value="0" min="0" />
+              <div class="box-buttons">
+                <button
+                  type="button"
+                  class="add-button"
+                  data-input="vehicle-exit"
+                >
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+                <button
+                  type="button"
+                  class="minus-button"
+                  data-input="vehicle-exit"
+                >
+                  <i class="bi bi-dash-lg"></i>
+                </button>
+              </div>
+            </div>
+          </main>
+          <footer class="pillbox-footer">
+            <button type="button" class="button-footer">העתק</button>
+            <button type="button" class="button-footer">וואטסאפ חמ"ל</button>
+            <button
+              type="button"
+              class="button-footer"
+              onclick="navigateTo('./a.html')"
+            >
+              חזור
+            </button>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
