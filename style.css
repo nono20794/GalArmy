@@ -356,6 +356,7 @@ North Gates
 }
 .row-name {
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 8px;
@@ -379,7 +380,14 @@ input[type="radio"] {
   color: red;
 }
 .select-locks {
-  font-size: 11px;
+  font-size: 12px;
+}
+#north-locks1 {
+  padding: 3px;
+  background-color: white;
+  border: 1px solid #1e4040;
+  border-radius: 5px;
+  font-family: "Fredoka", sans-serif;
 }
 .select-locks label {
   margin-left: 5px;
@@ -389,6 +397,7 @@ input[type="radio"] {
 .notes-row {
   padding: 5px;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
