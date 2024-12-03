@@ -52,8 +52,9 @@ header
   display: flex;
   align-items: center;
 }
-.left-header:hover,
-.right-header:hover .menu-btn {
+.left-header a:hover,
+.right-header:hover,
+.menu-btn {
   opacity: 0.6;
 }
 .left-header a {
@@ -257,6 +258,7 @@ PILLBOX
   background-color: white;
   color: #1e4040;
   font-size: 13px;
+  border: 1px solid #1e4040;
 }
 .close-gate {
   padding-bottom: 5px;
@@ -306,15 +308,51 @@ Breakpoints
   .main-a {
     flex-direction: row;
     gap: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .inner-a-grid {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .header-a {
+    font-size: 20px;
+  }
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5 {
+    padding: 8px;
+    gap: 8px;
+  }
+  .pillbox-a-header {
+    padding: 10px;
+    gap: 10px;
+  }
+  .input-commander {
+    width: 60%;
   }
 }
 
 @media (min-width: 830px) {
+  .inner-a-pillbox {
+    row-gap: 15px;
+  }
   .pillbox-a-main {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "box1-alias .  box2-alias . box3-alias"
       ". box4-alias . box5-alias .";
+  }
+  .pillbox-a-main {
+    padding-bottom: 20px;
+  }
+  .pillbox-a-header h3 {
+    font-size: 25px;
+  }
+  .pillbox-a-header {
+    gap: 20px;
   }
 }
