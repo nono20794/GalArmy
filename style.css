@@ -341,8 +341,10 @@ North Gates
   align-items: center;
   gap: 10px;
 }
-
-#north-a-shift {
+.shift-north {
+  font-size: 14px;
+}
+.shift-north #north-a-shift {
   margin-right: 7px;
   font-family: "Fredoka", sans-serif;
   width: fit-content;
