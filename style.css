@@ -336,6 +336,10 @@ North Gates
 }
 .footer-a-north {
   grid-area: north-a-foor-alias;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 #north-a-shift {
