@@ -328,6 +328,7 @@ North Gates
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-auto-flow: row;
+  row-gap: 8px;
 }
 .footer-a-north {
   grid-area: north-a-foor-alias;
@@ -349,13 +350,17 @@ North Gates
 .row-item {
   display: contents;
 }
+.row-name {
+  text-align: end;
+}
 input[type="radio"] {
   width: 13px; /* Adjust the width */
   height: 13px; /* Adjust the height */
   margin-right: 10px;
   margin-left: 3px;
 }
-.item-status {
+.item-status,
+.select-locks {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,7 +375,17 @@ input[type="radio"] {
   font-size: 10px;
 }
 .select-locks label {
-  text-wrap: balance;
+  margin-left: 8px;
+}
+.notes-row {
+  padding: 3px;
+}
+.row-notes {
+  text-align: right;
+  width: 100%;
+  border: 1px solid #1e4040;
+  border-radius: 5px;
+  padding-right: 3px;
 }
 /*
 =========
