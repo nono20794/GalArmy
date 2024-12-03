@@ -54,7 +54,7 @@ header
 }
 .left-header a:hover,
 .right-header:hover,
-.menu-btn {
+.menu-btn:hover {
   opacity: 0.6;
 }
 .left-header a {
@@ -204,7 +204,7 @@ PILLBOX
 }
 .pillbox-footer {
   grid-area: pillbox-footer-alias;
-  padding-top: 8px;
+  padding-top: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,8 +213,12 @@ PILLBOX
 }
 .pillbox-a-buttons {
   display: flex;
-  align-items: flex-start;
+  justify-content: flex-start;
   gap: 8px;
+}
+.pillbox-a-notes {
+  display: flex;
+  justify-content: center;
 }
 .box1 {
   grid-area: box1-alias;
@@ -296,12 +300,7 @@ PILLBOX
   border: 1px solid #1e4040;
   border-radius: 5px;
 }
-/* .pillbox-footer {
-  padding-top: 8px;
-  align-items: start;
-  gap: 10px;
-  border-top: 1px solid rgba(30, 64, 64, 0.2);
-} */
+
 /*
 =========
 Breakpoints
