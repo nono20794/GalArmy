@@ -187,7 +187,9 @@ PILLBOX
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: center;
 }
+
 .pillbox-a-main {
   grid-area: pillbox-a-main-alias;
   display: grid;
@@ -202,6 +204,17 @@ PILLBOX
 }
 .pillbox-footer {
   grid-area: pillbox-footer-alias;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid rgba(30, 64, 64, 0.2);
+}
+.pillbox-a-buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
 .box1 {
   grid-area: box1-alias;
@@ -231,16 +244,9 @@ PILLBOX
   padding: 3px;
   gap: 5px;
 }
-.pillbox-a-header,
-.pillbox-footer {
-  display: flex;
-  justify-content: center;
-}
-.pillbox-a-header {
-  align-items: center;
-}
 
-.input-commander {
+.input-commander,
+.pillbox-notes {
   text-align: right;
   padding-right: 8px;
   margin-right: 10px;
@@ -248,6 +254,11 @@ PILLBOX
   font-family: "Fredoka", sans-serif;
   color: #1e4040;
   font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid #1e4040;
+}
+.pillbox-notes {
+  width: 60%;
 }
 #open-gate-pill,
 #close-gate-pill {
@@ -259,6 +270,7 @@ PILLBOX
   color: #1e4040;
   font-size: 13px;
   border: 1px solid #1e4040;
+  border-radius: 5px;
 }
 .close-gate {
   padding-bottom: 5px;
@@ -281,13 +293,15 @@ PILLBOX
   width: 90px;
   font-family: "Fredoka", sans-serif;
   font-size: 13px;
+  border: 1px solid #1e4040;
+  border-radius: 5px;
 }
-.pillbox-footer {
+/* .pillbox-footer {
   padding-top: 8px;
   align-items: start;
   gap: 10px;
   border-top: 1px solid rgba(30, 64, 64, 0.2);
-}
+} */
 /*
 =========
 Breakpoints
