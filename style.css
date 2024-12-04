@@ -482,7 +482,7 @@ A-OLIVE
   background-color: white;
   border: 1px solid #1e4040;
   border-radius: 5px;
-  width: fit-content;
+  width: 80%;
 }
 .olive-input-commander {
   text-align: right;
