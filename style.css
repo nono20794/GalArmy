@@ -454,13 +454,19 @@ A-OLIVE
 .olive-a-main {
   grid-area: olive-main-a;
   display: grid;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 1fr 1fr;
   row-gap: 5px;
   column-gap: 5px;
+  justify-items: center;
+  align-content: center;
 }
 .olive-a-footer {
   grid-area: olive-foot-a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .olive-gate,
 .olive-shift,
@@ -585,6 +591,16 @@ Breakpoints
   #north-a-shift {
     width: 120px;
     font-size: 16px;
+  }
+  .olive-a-header {
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .olive-a-header h5 {
+    font-size: 25px;
+  }
+  .olive-item {
+    width: 230px;
   }
 }
 

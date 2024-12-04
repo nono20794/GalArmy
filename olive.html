@@ -79,17 +79,19 @@
               <label for="olive-enter-exit">כניסה/יציאה:</label>
             </div>
             <div class="olive-commander-name">
-                <input
-                  type="text"
-                  name="commander"
-                  placeholder="הכנס שם"
-                  class="olive-input-commander"
-                />
-                <label for="commander">שם מפקד:</label>
+              <input
+                type="text"
+                name="commander"
+                placeholder="הכנס שם"
+                class="olive-input-commander"
+              />
+              <label for="commander">שם מפקד:</label>
+            </div>
+            <p id="date"></p>
           </header>
           <main class="olive-a-main">
-            <div class="olive-item olive-enter-adult" >
-                <p>מבוגרים</p>
+            <div class="olive-item olive-enter-adult">
+              <p>מבוגרים</p>
               <input id="enter-adult-olive" type="number" value="0" min="0" />
               <div class="box-buttons">
                 <button
@@ -109,7 +111,7 @@
               </div>
             </div>
             <div class="olive-item olive-reject-adult">
-                <p>מבוגרים (מסורבים)</p>
+              <p>מבוגרים (מסורבים)</p>
               <input id="reject-adult-olive" type="number" value="0" min="0" />
               <div class="box-buttons">
                 <button
@@ -129,7 +131,7 @@
               </div>
             </div>
             <div class="olive-item olive-enter-child">
-                <p>ילדים</p>
+              <p>ילדים</p>
               <input id="enter-child-olive" type="number" value="0" min="0" />
               <div class="box-buttons">
                 <button
@@ -149,7 +151,7 @@
               </div>
             </div>
             <div class="olive-item olive-rejcet-child">
-                <p>ילדים (מסורבים)</p>
+              <p>ילדים (מסורבים)</p>
               <input id="rejcet-child-olive" type="number" value="0" min="0" />
               <div class="box-buttons">
                 <button
@@ -169,7 +171,7 @@
               </div>
             </div>
             <div class="olive-item olive-enter-donkey">
-                <p>חמורים</p>
+              <p>חמורים</p>
               <input id="enter-donkey-olive" type="number" value="0" min="0" />
               <div class="box-buttons">
                 <button
@@ -189,7 +191,7 @@
               </div>
             </div>
             <div class="olive-item olive-reject-donkey">
-                <p>חמורים (מסורבים)</p>
+              <p>חמורים (מסורבים)</p>
               <input id="reject-donkey-olive" type="number" value="0" min="0" />
               <div class="box-buttons">
                 <button
@@ -209,7 +211,7 @@
               </div>
             </div>
             <div class="olive-item olive-enter-tractor">
-                <p>מספר נכנסים</p>
+              <p>מספר נכנסים</p>
               <input id="enter-tractor-olive" type="number" value="0" min="0" />
               <div class="box-buttons">
                 <button
@@ -229,8 +231,13 @@
               </div>
             </div>
             <div class="olive-item olive-reject-tractor">
-                <p>מספר נכנסים</p>
-              <input id="reject-tractor-olive" type="number" value="0" min="0" />
+              <p>מספר נכנסים</p>
+              <input
+                id="reject-tractor-olive"
+                type="number"
+                value="0"
+                min="0"
+              />
               <div class="box-buttons">
                 <button
                   type="button"
@@ -249,7 +256,17 @@
               </div>
             </div>
           </main>
-          <footer class="olive-a-footer">a</footer>
+          <footer class="olive-a-footer">
+            <button type="button" class="button-footer">העתק</button>
+            <button type="button" class="button-footer">וואטסאפ חמ"ל</button>
+            <button
+              type="button"
+              class="button-footer"
+              onclick="navigateTo('./a.html')"
+            >
+              חזור
+            </button>
+          </footer>
         </div>
       </div>
     </div>
