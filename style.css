@@ -504,6 +504,21 @@ A-OLIVE
   padding: 5px;
   width: 100%;
 }
+#enter-adult-olive,
+#reject-adult-olive,
+#enter-child-olive,
+#rejcet-child-olive,
+#enter-donkey-olive,
+#reject-donkey-olive,
+#enter-tractor-olive,
+#reject-tractor-olive {
+  text-align: center !important;
+  width: 90px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 13px;
+  border: 1px solid #1e4040;
+  border-radius: 5px;
+}
 /*
 =========
 Breakpoints

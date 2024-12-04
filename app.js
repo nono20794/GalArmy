@@ -41,6 +41,14 @@ const counters = {
   "number-reject": 0,
   "vehicle-enter": 0,
   "vehicle-exit": 0,
+  "enter-adult-olive": 0,
+  "reject-adult-olive": 0,
+  "enter-child-olive": 0,
+  "rejcet-child-olive": 0,
+  "enter-donkey-olive": 0,
+  "reject-donkey-olive": 0,
+  "enter-tractor-olive": 0,
+  "reject-tractor-olive": 0,
   // Add additional keys for the remaining rows here
 };
 document.querySelectorAll(".add-button").forEach((button) => {
